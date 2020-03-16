@@ -1,7 +1,7 @@
 package com.effectivejava.corejava;
 
 /**
- * equals method String, StringBuffer and StringBuilder classes.
+ * equals method for String, StringBuffer and StringBuilder classes.
  * 
  * @author learneffectivejava
  *
