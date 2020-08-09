@@ -1,4 +1,4 @@
-package com.effectivejava.corejava.designpattern.singleton.lazyinititalized.threadsafe3;
+package com.effectivejava.designpattern.singleton.lazyinititalized.threadsafe3;
 
 /**
  * Lazy Initialized Singleton thread-safe version 3 with Double-Checked-Locking.

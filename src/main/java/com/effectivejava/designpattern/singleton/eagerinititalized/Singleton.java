@@ -1,4 +1,4 @@
-package com.effectivejava.corejava.designpattern.singleton.eagerinititalized;
+package com.effectivejava.designpattern.singleton.eagerinititalized;
 
 /**
  * Eager Initialized Singleton.

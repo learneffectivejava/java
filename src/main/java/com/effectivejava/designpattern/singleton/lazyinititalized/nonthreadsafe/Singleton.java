@@ -1,4 +1,4 @@
-package com.effectivejava.corejava.designpattern.singleton.lazyinititalized.nonthreadsafe;
+package com.effectivejava.designpattern.singleton.lazyinititalized.nonthreadsafe;
 
 /**
  * Lazy Initialized Singleton.
