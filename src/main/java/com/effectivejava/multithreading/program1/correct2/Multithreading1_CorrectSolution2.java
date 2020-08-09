@@ -1,4 +1,4 @@
-package com.effectivejava.multithreading.correct1;
+package com.effectivejava.multithreading.program1.correct2;
 
 /**
  * Race condition in custom AtomicInteger.
@@ -20,6 +20,10 @@ class SynchronizedInteger {
     public void setData(int data) {
         this.data = data;
     }
+
+    public synchronized void incrementData() {
+        this.data++;
+    }
 }
 
 class Incrementer extends Thread {
@@ -32,15 +36,14 @@ class Incrementer extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 10000; i++) {
-            synchronized (synchronizedInteger) {
-                int data = synchronizedInteger.getData();
-                synchronizedInteger.setData(data + 1);
-            }
+            // int data = synchronizedInteger.getData();
+            // synchronizedInteger.setData(data + 1);
+            synchronizedInteger.incrementData();
         }
     }
 }
 
-public class Multithreading1_CorrectSolution1 {
+public class Multithreading1_CorrectSolution2 {
     public static void main(final String[] args) throws InterruptedException {
         SynchronizedInteger synchronizedInteger = new SynchronizedInteger(0);
         Incrementer incrementer1 = new Incrementer(synchronizedInteger);
